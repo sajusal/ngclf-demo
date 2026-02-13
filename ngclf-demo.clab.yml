@@ -6,7 +6,7 @@ topology:
     kind: nokia_srlinux
   kinds:
     nokia_srlinux:
-      type: ixrd2l
+      type: ixr-d2l
       image: ghcr.io/nokia/srlinux:25.10.1
       startup-config: startup.cfg
     linux:
