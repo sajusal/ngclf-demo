@@ -1,0 +1,48 @@
+all:
+  vars:
+    # The generated inventory is assumed to be used from the clab host.
+    # Hence no http proxy should be used. Therefore we make sure the http
+    # module does not attempt using any global http proxy.
+    ansible_httpapi_use_proxy: false
+  children:
+    linux:
+      hosts:
+        client:
+          ansible_host: 172.20.20.2
+        ot1:
+          ansible_host: 172.20.20.16
+        ot2:
+          ansible_host: 172.20.20.14
+        ot3:
+          ansible_host: 172.20.20.10
+        ot4:
+          ansible_host: 172.20.20.11
+        ot5:
+          ansible_host: 172.20.20.3
+        ot6:
+          ansible_host: 172.20.20.7
+    nokia_srlinux:
+      vars:
+        ansible_network_os: nokia.srlinux.srlinux
+        # default connection type for nodes of this kind
+        # feel free to override this in your inventory
+        ansible_connection: ansible.netcommon.httpapi
+        ansible_user: admin
+        ansible_password: NokiaSrl1!
+      hosts:
+        cgr1:
+          ansible_host: 172.20.20.9
+        cgr2:
+          ansible_host: 172.20.20.5
+        clf1:
+          ansible_host: 172.20.20.15
+        clf2:
+          ansible_host: 172.20.20.8
+        clf3:
+          ansible_host: 172.20.20.12
+        csp1:
+          ansible_host: 172.20.20.4
+        csp2:
+          ansible_host: 172.20.20.6
+        internet:
+          ansible_host: 172.20.20.13

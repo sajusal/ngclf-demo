@@ -1,0 +1,55 @@
+{
+  "freeTextAnnotations": [],
+  "freeShapeAnnotations": [],
+  "groupStyleAnnotations": [],
+  "networkNodeAnnotations": [],
+  "nodeAnnotations": [
+    {
+      "id": "clf1",
+      "interfacePattern": "e1-{n}"
+    },
+    {
+      "id": "clf2",
+      "interfacePattern": "e1-{n}"
+    },
+    {
+      "id": "clf3",
+      "interfacePattern": "e1-{n}"
+    },
+    {
+      "id": "clf4",
+      "interfacePattern": "e1-{n}"
+    },
+    {
+      "id": "clf5",
+      "interfacePattern": "e1-{n}"
+    },
+    {
+      "id": "clf6",
+      "interfacePattern": "e1-{n}"
+    },
+    {
+      "id": "csp1",
+      "interfacePattern": "e1-{n}"
+    },
+    {
+      "id": "csp2",
+      "interfacePattern": "e1-{n}"
+    },
+    {
+      "id": "cgr1",
+      "interfacePattern": "e1-{n}"
+    },
+    {
+      "id": "cgr2",
+      "interfacePattern": "e1-{n}"
+    },
+    {
+      "id": "internet",
+      "interfacePattern": "e1-{n}"
+    }
+  ],
+  "edgeAnnotations": [],
+  "aliasEndpointAnnotations": [],
+  "viewerSettings": {}
+}

@@ -1,0 +1,76 @@
+---
+client:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.2
+ot1:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.16
+ot2:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.14
+ot3:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.10
+ot4:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.11
+ot5:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.3
+ot6:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.7
+cgr1:
+    username: admin
+    password: NokiaSrl1!
+    platform: nokia_srlinux
+    hostname: 172.20.20.9
+cgr2:
+    username: admin
+    password: NokiaSrl1!
+    platform: nokia_srlinux
+    hostname: 172.20.20.5
+clf1:
+    username: admin
+    password: NokiaSrl1!
+    platform: nokia_srlinux
+    hostname: 172.20.20.15
+clf2:
+    username: admin
+    password: NokiaSrl1!
+    platform: nokia_srlinux
+    hostname: 172.20.20.8
+clf3:
+    username: admin
+    password: NokiaSrl1!
+    platform: nokia_srlinux
+    hostname: 172.20.20.12
+csp1:
+    username: admin
+    password: NokiaSrl1!
+    platform: nokia_srlinux
+    hostname: 172.20.20.4
+csp2:
+    username: admin
+    password: NokiaSrl1!
+    platform: nokia_srlinux
+    hostname: 172.20.20.6
+internet:
+    username: admin
+    password: NokiaSrl1!
+    platform: nokia_srlinux
+    hostname: 172.20.20.13

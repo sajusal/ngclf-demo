@@ -1,0 +1,1044 @@
+{
+  "name": "ngclf-demo",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "",
+      "mgmt": {
+        "network": "clab",
+        "bridge": "br-1704435b4667",
+        "ipv4-subnet": "172.20.20.0/24",
+        "ipv4-gw": "172.20.20.1",
+        "ipv6-subnet": "3fff:172:20:20::/64",
+        "ipv6-gw": "3fff:172:20:20::1",
+        "external-access": true
+      }
+    }
+  },
+  "ssh-pub-keys": ["ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCeTFOGzB/Z/yPcYWxqxCitiQjVSynEZ7BPIpacflBHDTb4yYQp2H2/vAYsjz4z9g0GsULpZrXKiH8Jp1UnU8zeYRAnswExVyUg9O1GRgnWcfLnVF49EvIL15nYFp3T9cRNHl1FbpReGdSMCy7ecmGQtaDvZ8X08oLGLm3t4clbSdHyMVb6jWPn7mkaOFjHWHIBlFgAMSxRvjGvWW0Et2VJFFU5qEQLImCspV6oF5HIO5MtRMren2eQWgYIsM6OdbEufmUOAWOF2CzWjx2crUHr9X7RedCuQccuZS3NNu4bDM145zHjnRDUvTMw+B8v+EfimB4cC/Vlk4RwD27lG+vuFamUX0dm+V2XaA+0ULgFSDBvTRmY7bYoYr7Iu5gBlF9uj2nNEA9yzi+JyUr8PpzrP5O/oP5SFTZ5z6niRidksEinW+yadUQ/IY1+siCuXzA51/cf7V4+HQ4WTtSLjfdF4Gfpe023MaudW76/t6Fn6eiwAcu4kdkBoqxB5NkxX5s="],
+  "nodes": {
+    "cgr1": {
+      "index": "0",
+      "shortname": "cgr1",
+      "longname": "cgr1",
+      "fqdn": "cgr1.ngclf-demo.io",
+      "group": "",
+      "labdir": "/home/sabdulra/ngclf/clab-ngclf-demo/cgr1",
+      "kind": "nokia_srlinux",
+      "image": "ghcr.io/nokia/srlinux:25.10.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.9",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::9",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "1a:51:00:00:00:00",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-1704435b4667",
+        "clab-node-group": "",
+        "clab-node-kind": "nokia_srlinux",
+        "clab-node-lab-dir": "/home/sabdulra/ngclf/clab-ngclf-demo/cgr1",
+        "clab-node-longname": "cgr1",
+        "clab-node-name": "cgr1",
+        "clab-node-type": "ixrd2l",
+        "clab-owner": "sabdulra",
+        "clab-topo-file": "/home/sabdulra/ngclf/ngclf-demo.clab.yml",
+        "containerlab": "ngclf-demo"
+      },
+      "port-bindings": [
+      ]
+    },
+    "cgr2": {
+      "index": "1",
+      "shortname": "cgr2",
+      "longname": "cgr2",
+      "fqdn": "cgr2.ngclf-demo.io",
+      "group": "",
+      "labdir": "/home/sabdulra/ngclf/clab-ngclf-demo/cgr2",
+      "kind": "nokia_srlinux",
+      "image": "ghcr.io/nokia/srlinux:25.10.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.5",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::5",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "1a:f0:01:00:00:00",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-1704435b4667",
+        "clab-node-group": "",
+        "clab-node-kind": "nokia_srlinux",
+        "clab-node-lab-dir": "/home/sabdulra/ngclf/clab-ngclf-demo/cgr2",
+        "clab-node-longname": "cgr2",
+        "clab-node-name": "cgr2",
+        "clab-node-type": "ixrd2l",
+        "clab-owner": "sabdulra",
+        "clab-topo-file": "/home/sabdulra/ngclf/ngclf-demo.clab.yml",
+        "containerlab": "ngclf-demo"
+      },
+      "port-bindings": [
+      ]
+    },
+    "clf1": {
+      "index": "2",
+      "shortname": "clf1",
+      "longname": "clf1",
+      "fqdn": "clf1.ngclf-demo.io",
+      "group": "",
+      "labdir": "/home/sabdulra/ngclf/clab-ngclf-demo/clf1",
+      "kind": "nokia_srlinux",
+      "image": "ghcr.io/nokia/srlinux:25.10.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.15",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::f",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "1a:49:02:00:00:00",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-1704435b4667",
+        "clab-node-group": "",
+        "clab-node-kind": "nokia_srlinux",
+        "clab-node-lab-dir": "/home/sabdulra/ngclf/clab-ngclf-demo/clf1",
+        "clab-node-longname": "clf1",
+        "clab-node-name": "clf1",
+        "clab-node-type": "ixrd2l",
+        "clab-owner": "sabdulra",
+        "clab-topo-file": "/home/sabdulra/ngclf/ngclf-demo.clab.yml",
+        "containerlab": "ngclf-demo"
+      },
+      "port-bindings": [
+      ]
+    },
+    "clf2": {
+      "index": "3",
+      "shortname": "clf2",
+      "longname": "clf2",
+      "fqdn": "clf2.ngclf-demo.io",
+      "group": "",
+      "labdir": "/home/sabdulra/ngclf/clab-ngclf-demo/clf2",
+      "kind": "nokia_srlinux",
+      "image": "ghcr.io/nokia/srlinux:25.10.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.8",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::8",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "1a:b3:03:00:00:00",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-1704435b4667",
+        "clab-node-group": "",
+        "clab-node-kind": "nokia_srlinux",
+        "clab-node-lab-dir": "/home/sabdulra/ngclf/clab-ngclf-demo/clf2",
+        "clab-node-longname": "clf2",
+        "clab-node-name": "clf2",
+        "clab-node-type": "ixrd2l",
+        "clab-owner": "sabdulra",
+        "clab-topo-file": "/home/sabdulra/ngclf/ngclf-demo.clab.yml",
+        "containerlab": "ngclf-demo"
+      },
+      "port-bindings": [
+      ]
+    },
+    "clf3": {
+      "index": "4",
+      "shortname": "clf3",
+      "longname": "clf3",
+      "fqdn": "clf3.ngclf-demo.io",
+      "group": "",
+      "labdir": "/home/sabdulra/ngclf/clab-ngclf-demo/clf3",
+      "kind": "nokia_srlinux",
+      "image": "ghcr.io/nokia/srlinux:25.10.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.12",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::c",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "1a:ed:04:00:00:00",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-1704435b4667",
+        "clab-node-group": "",
+        "clab-node-kind": "nokia_srlinux",
+        "clab-node-lab-dir": "/home/sabdulra/ngclf/clab-ngclf-demo/clf3",
+        "clab-node-longname": "clf3",
+        "clab-node-name": "clf3",
+        "clab-node-type": "ixrd2l",
+        "clab-owner": "sabdulra",
+        "clab-topo-file": "/home/sabdulra/ngclf/ngclf-demo.clab.yml",
+        "containerlab": "ngclf-demo"
+      },
+      "port-bindings": [
+      ]
+    },
+    "client": {
+      "index": "5",
+      "shortname": "client",
+      "longname": "client",
+      "fqdn": "client.ngclf-demo.io",
+      "group": "",
+      "labdir": "/home/sabdulra/ngclf/clab-ngclf-demo/client",
+      "kind": "linux",
+      "image": "ghcr.io/srl-labs/network-multitool",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.2",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::2",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-1704435b4667",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/sabdulra/ngclf/clab-ngclf-demo/client",
+        "clab-node-longname": "client",
+        "clab-node-name": "client",
+        "clab-node-type": "",
+        "clab-owner": "sabdulra",
+        "clab-topo-file": "/home/sabdulra/ngclf/ngclf-demo.clab.yml",
+        "containerlab": "ngclf-demo"
+      },
+      "port-bindings": [
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 22,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 443,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 80,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 8080,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 11443,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 1180,
+          "protocol": "tcp"
+        }
+      ]
+    },
+    "csp1": {
+      "index": "6",
+      "shortname": "csp1",
+      "longname": "csp1",
+      "fqdn": "csp1.ngclf-demo.io",
+      "group": "",
+      "labdir": "/home/sabdulra/ngclf/clab-ngclf-demo/csp1",
+      "kind": "nokia_srlinux",
+      "image": "ghcr.io/nokia/srlinux:25.10.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.4",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::4",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "1a:c0:06:00:00:00",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-1704435b4667",
+        "clab-node-group": "",
+        "clab-node-kind": "nokia_srlinux",
+        "clab-node-lab-dir": "/home/sabdulra/ngclf/clab-ngclf-demo/csp1",
+        "clab-node-longname": "csp1",
+        "clab-node-name": "csp1",
+        "clab-node-type": "ixrd2l",
+        "clab-owner": "sabdulra",
+        "clab-topo-file": "/home/sabdulra/ngclf/ngclf-demo.clab.yml",
+        "containerlab": "ngclf-demo"
+      },
+      "port-bindings": [
+      ]
+    },
+    "csp2": {
+      "index": "7",
+      "shortname": "csp2",
+      "longname": "csp2",
+      "fqdn": "csp2.ngclf-demo.io",
+      "group": "",
+      "labdir": "/home/sabdulra/ngclf/clab-ngclf-demo/csp2",
+      "kind": "nokia_srlinux",
+      "image": "ghcr.io/nokia/srlinux:25.10.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.6",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::6",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "1a:d2:07:00:00:00",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-1704435b4667",
+        "clab-node-group": "",
+        "clab-node-kind": "nokia_srlinux",
+        "clab-node-lab-dir": "/home/sabdulra/ngclf/clab-ngclf-demo/csp2",
+        "clab-node-longname": "csp2",
+        "clab-node-name": "csp2",
+        "clab-node-type": "ixrd2l",
+        "clab-owner": "sabdulra",
+        "clab-topo-file": "/home/sabdulra/ngclf/ngclf-demo.clab.yml",
+        "containerlab": "ngclf-demo"
+      },
+      "port-bindings": [
+      ]
+    },
+    "internet": {
+      "index": "8",
+      "shortname": "internet",
+      "longname": "internet",
+      "fqdn": "internet.ngclf-demo.io",
+      "group": "",
+      "labdir": "/home/sabdulra/ngclf/clab-ngclf-demo/internet",
+      "kind": "nokia_srlinux",
+      "image": "ghcr.io/nokia/srlinux:25.10.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.13",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::d",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "1a:46:08:00:00:00",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-1704435b4667",
+        "clab-node-group": "",
+        "clab-node-kind": "nokia_srlinux",
+        "clab-node-lab-dir": "/home/sabdulra/ngclf/clab-ngclf-demo/internet",
+        "clab-node-longname": "internet",
+        "clab-node-name": "internet",
+        "clab-node-type": "ixrd2l",
+        "clab-owner": "sabdulra",
+        "clab-topo-file": "/home/sabdulra/ngclf/ngclf-demo.clab.yml",
+        "containerlab": "ngclf-demo"
+      },
+      "port-bindings": [
+      ]
+    },
+    "ot1": {
+      "index": "9",
+      "shortname": "ot1",
+      "longname": "ot1",
+      "fqdn": "ot1.ngclf-demo.io",
+      "group": "",
+      "labdir": "/home/sabdulra/ngclf/clab-ngclf-demo/ot1",
+      "kind": "linux",
+      "image": "ghcr.io/srl-labs/network-multitool",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.16",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::10",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-1704435b4667",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/sabdulra/ngclf/clab-ngclf-demo/ot1",
+        "clab-node-longname": "ot1",
+        "clab-node-name": "ot1",
+        "clab-node-type": "",
+        "clab-owner": "sabdulra",
+        "clab-topo-file": "/home/sabdulra/ngclf/ngclf-demo.clab.yml",
+        "containerlab": "ngclf-demo"
+      },
+      "port-bindings": [
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 80,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 8080,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 11443,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 1180,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 22,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 443,
+          "protocol": "tcp"
+        }
+      ]
+    },
+    "ot2": {
+      "index": "10",
+      "shortname": "ot2",
+      "longname": "ot2",
+      "fqdn": "ot2.ngclf-demo.io",
+      "group": "",
+      "labdir": "/home/sabdulra/ngclf/clab-ngclf-demo/ot2",
+      "kind": "linux",
+      "image": "ghcr.io/srl-labs/network-multitool",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.14",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::e",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-1704435b4667",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/sabdulra/ngclf/clab-ngclf-demo/ot2",
+        "clab-node-longname": "ot2",
+        "clab-node-name": "ot2",
+        "clab-node-type": "",
+        "clab-owner": "sabdulra",
+        "clab-topo-file": "/home/sabdulra/ngclf/ngclf-demo.clab.yml",
+        "containerlab": "ngclf-demo"
+      },
+      "port-bindings": [
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 1180,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 22,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 443,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 80,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 8080,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 11443,
+          "protocol": "tcp"
+        }
+      ]
+    },
+    "ot3": {
+      "index": "11",
+      "shortname": "ot3",
+      "longname": "ot3",
+      "fqdn": "ot3.ngclf-demo.io",
+      "group": "",
+      "labdir": "/home/sabdulra/ngclf/clab-ngclf-demo/ot3",
+      "kind": "linux",
+      "image": "ghcr.io/srl-labs/network-multitool",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.10",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::a",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-1704435b4667",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/sabdulra/ngclf/clab-ngclf-demo/ot3",
+        "clab-node-longname": "ot3",
+        "clab-node-name": "ot3",
+        "clab-node-type": "",
+        "clab-owner": "sabdulra",
+        "clab-topo-file": "/home/sabdulra/ngclf/ngclf-demo.clab.yml",
+        "containerlab": "ngclf-demo"
+      },
+      "port-bindings": [
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 11443,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 1180,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 22,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 443,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 80,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 8080,
+          "protocol": "tcp"
+        }
+      ]
+    },
+    "ot4": {
+      "index": "12",
+      "shortname": "ot4",
+      "longname": "ot4",
+      "fqdn": "ot4.ngclf-demo.io",
+      "group": "",
+      "labdir": "/home/sabdulra/ngclf/clab-ngclf-demo/ot4",
+      "kind": "linux",
+      "image": "ghcr.io/srl-labs/network-multitool",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.11",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::b",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-1704435b4667",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/sabdulra/ngclf/clab-ngclf-demo/ot4",
+        "clab-node-longname": "ot4",
+        "clab-node-name": "ot4",
+        "clab-node-type": "",
+        "clab-owner": "sabdulra",
+        "clab-topo-file": "/home/sabdulra/ngclf/ngclf-demo.clab.yml",
+        "containerlab": "ngclf-demo"
+      },
+      "port-bindings": [
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 11443,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 1180,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 22,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 443,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 80,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 8080,
+          "protocol": "tcp"
+        }
+      ]
+    },
+    "ot5": {
+      "index": "13",
+      "shortname": "ot5",
+      "longname": "ot5",
+      "fqdn": "ot5.ngclf-demo.io",
+      "group": "",
+      "labdir": "/home/sabdulra/ngclf/clab-ngclf-demo/ot5",
+      "kind": "linux",
+      "image": "ghcr.io/srl-labs/network-multitool",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.3",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::3",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-1704435b4667",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/sabdulra/ngclf/clab-ngclf-demo/ot5",
+        "clab-node-longname": "ot5",
+        "clab-node-name": "ot5",
+        "clab-node-type": "",
+        "clab-owner": "sabdulra",
+        "clab-topo-file": "/home/sabdulra/ngclf/ngclf-demo.clab.yml",
+        "containerlab": "ngclf-demo"
+      },
+      "port-bindings": [
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 8080,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 11443,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 1180,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 22,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 443,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 80,
+          "protocol": "tcp"
+        }
+      ]
+    },
+    "ot6": {
+      "index": "14",
+      "shortname": "ot6",
+      "longname": "ot6",
+      "fqdn": "ot6.ngclf-demo.io",
+      "group": "",
+      "labdir": "/home/sabdulra/ngclf/clab-ngclf-demo/ot6",
+      "kind": "linux",
+      "image": "ghcr.io/srl-labs/network-multitool",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.7",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::7",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-1704435b4667",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/sabdulra/ngclf/clab-ngclf-demo/ot6",
+        "clab-node-longname": "ot6",
+        "clab-node-name": "ot6",
+        "clab-node-type": "",
+        "clab-owner": "sabdulra",
+        "clab-topo-file": "/home/sabdulra/ngclf/ngclf-demo.clab.yml",
+        "containerlab": "ngclf-demo"
+      },
+      "port-bindings": [
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 1180,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 22,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 443,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 80,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 8080,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 11443,
+          "protocol": "tcp"
+        }
+      ]
+    }
+  },
+  "links": [
+    {
+      "endpoints": {
+        "a": {
+          "node": "clf1",
+          "interface": "e1-1",
+          "mac": "aa:c1:ab:6c:50:06",
+          "peer": "z"
+        },
+        "z": {
+          "node": "csp1",
+          "interface": "e1-1",
+          "mac": "aa:c1:ab:e8:10:6d",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "clf2",
+          "interface": "e1-1",
+          "mac": "aa:c1:ab:3a:1a:02",
+          "peer": "z"
+        },
+        "z": {
+          "node": "csp1",
+          "interface": "e1-2",
+          "mac": "aa:c1:ab:70:d4:01",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "clf3",
+          "interface": "e1-1",
+          "mac": "aa:c1:ab:8c:64:5f",
+          "peer": "z"
+        },
+        "z": {
+          "node": "csp1",
+          "interface": "e1-3",
+          "mac": "aa:c1:ab:7b:d1:59",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "clf1",
+          "interface": "e1-11",
+          "mac": "aa:c1:ab:98:5e:50",
+          "peer": "z"
+        },
+        "z": {
+          "node": "csp2",
+          "interface": "e1-1",
+          "mac": "aa:c1:ab:09:89:bb",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "clf2",
+          "interface": "e1-12",
+          "mac": "aa:c1:ab:99:14:2d",
+          "peer": "z"
+        },
+        "z": {
+          "node": "csp2",
+          "interface": "e1-2",
+          "mac": "aa:c1:ab:39:6d:73",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "clf3",
+          "interface": "e1-13",
+          "mac": "aa:c1:ab:7e:f4:08",
+          "peer": "z"
+        },
+        "z": {
+          "node": "csp2",
+          "interface": "e1-3",
+          "mac": "aa:c1:ab:0e:7f:30",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "csp1",
+          "interface": "e1-10",
+          "mac": "aa:c1:ab:20:11:aa",
+          "peer": "z"
+        },
+        "z": {
+          "node": "cgr1",
+          "interface": "e1-10",
+          "mac": "aa:c1:ab:07:92:21",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "csp1",
+          "interface": "e1-11",
+          "mac": "aa:c1:ab:fb:10:d9",
+          "peer": "z"
+        },
+        "z": {
+          "node": "cgr2",
+          "interface": "e1-11",
+          "mac": "aa:c1:ab:7b:d2:3f",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "csp2",
+          "interface": "e1-11",
+          "mac": "aa:c1:ab:25:e7:21",
+          "peer": "z"
+        },
+        "z": {
+          "node": "cgr1",
+          "interface": "e1-11",
+          "mac": "aa:c1:ab:dc:28:9f",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "csp2",
+          "interface": "e1-10",
+          "mac": "aa:c1:ab:5e:d8:a2",
+          "peer": "z"
+        },
+        "z": {
+          "node": "cgr2",
+          "interface": "e1-10",
+          "mac": "aa:c1:ab:ef:97:c6",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "internet",
+          "interface": "e1-13",
+          "mac": "aa:c1:ab:93:c9:32",
+          "peer": "z"
+        },
+        "z": {
+          "node": "cgr1",
+          "interface": "e1-13",
+          "mac": "aa:c1:ab:dd:de:b8",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "internet",
+          "interface": "e1-14",
+          "mac": "aa:c1:ab:46:cd:fc",
+          "peer": "z"
+        },
+        "z": {
+          "node": "cgr2",
+          "interface": "e1-14",
+          "mac": "aa:c1:ab:b7:00:6e",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "ot1",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:61:d6:e7",
+          "peer": "z"
+        },
+        "z": {
+          "node": "clf1",
+          "interface": "e1-25",
+          "mac": "aa:c1:ab:5b:63:05",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "ot2",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:ce:38:3a",
+          "peer": "z"
+        },
+        "z": {
+          "node": "clf1",
+          "interface": "e1-26",
+          "mac": "aa:c1:ab:ed:3b:09",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "ot3",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:9e:61:d9",
+          "peer": "z"
+        },
+        "z": {
+          "node": "clf2",
+          "interface": "e1-25",
+          "mac": "aa:c1:ab:4e:bd:ef",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "ot4",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:e4:de:3c",
+          "peer": "z"
+        },
+        "z": {
+          "node": "clf2",
+          "interface": "e1-26",
+          "mac": "aa:c1:ab:cc:63:aa",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "ot5",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:1a:3f:33",
+          "peer": "z"
+        },
+        "z": {
+          "node": "clf3",
+          "interface": "e1-25",
+          "mac": "aa:c1:ab:b4:40:0d",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "ot6",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:26:de:19",
+          "peer": "z"
+        },
+        "z": {
+          "node": "clf3",
+          "interface": "e1-26",
+          "mac": "aa:c1:ab:21:f5:2a",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "client",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:7d:49:c7",
+          "peer": "z"
+        },
+        "z": {
+          "node": "internet",
+          "interface": "e1-25",
+          "mac": "aa:c1:ab:e2:dc:b9",
+          "peer": "a"
+        }
+      }
+    }
+  ]
+}
